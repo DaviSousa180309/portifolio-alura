@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-01: #000000;
+    --cor-02: #F6F6F6;
+    --cor-03: #22D4FD;
+    --cor-rover: #272727;
+}
+
+body {
+    /* height: 100vh; */
+    /* box-sizing: border-box; serve para que os elementos dentr do body não saiam dele */
+    box-sizing: border-box;
+    background-color: var(--cor-01);
+    color: var(--cor-02);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__link {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-03);
+    text-decoration: none;
+}
+
+.destaque {
+    color: var(--cor-03);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    /*  display: flex; serve para alinhar os itens em linha reta */
+    display: flex; 
+    /* align-items: center; serve para centralizar os itens  de acordo com o iten maior */
+    align-items: center;
+    /* justify-content: space-between; serve para colocar uma margem entre os itens */
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentaca__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona one', sans-serif;
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub_titulo {
+    font-family: 'Krona one', sans-serif;
+     font-weight: 400;
+     font-size: 1.5rem;
+}
+
+.links {
+    /* align-items: center; serve para centralizar os itens  de acordo com o iten maior */
+    align-items: center;
+    /*  display: flex; serve para alinhar os itens em linha reta */
+    display: flex; 
+    flex-direction: column;
+    /* justify-content: space-between; serve para colocar uma margem entre os itens */
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #22D4FD;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--cor-02);
+    padding: 21.5px 0;
+    text-decoration: none;
+    gap: 16px;
+}
+
+/* :hover serve para que quando eu passar o mouse em cima dele ele faz o que esta dito no codigo */
+.botoes:hover {
+    background-color: var(--cor-rover);
+}
+.rodape {
+    color: var(--cor-01);
+    background-color: var(--cor-03);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Imagem {
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    
+    .menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        padding: 5%;
+    }
+
+    .apresentaca__conteudo {
+        width: auto;
+    }
+}
